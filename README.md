@@ -1,5 +1,7 @@
 # FYP_ML_Distinguisher
 
+Code is in implementation state and is not complete
+
 # For Final Year project as Learning Purposes
 
 
