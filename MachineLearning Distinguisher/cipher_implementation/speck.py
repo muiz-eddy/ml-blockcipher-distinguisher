@@ -13,7 +13,8 @@
 #X[1]
 
 class SpeckCipher(object):
-    speck_setup = {32: {64: 5},
+    
+    speck_setup = {32: {64: 1},
                    48: {72: 22, 96: 23},
                    64: {96: 26, 128: 27},
                    96: {96: 28, 144: 29},
@@ -30,6 +31,7 @@ class SpeckCipher(object):
         
         #KEYS AND ROUND
         self.rounds = self.setups[key_size]
+        
         self.key_size = key_size 
         
         if self.block_size == 32:
@@ -73,7 +75,6 @@ class SpeckCipher(object):
 ###########################################################################################################################################################################
 ###ENCRYPTION     
     def encrypt_round(self, p1, p2, k):
-         
          rotatingX1 = ((p1 << (self.word_size - self.alpha_shift)) + (p1 >> self.alpha_shift)) & self.mod_mask
 
          addition = (rotatingX1 + p2) & self.mod_mask
@@ -180,7 +181,7 @@ class SpeckCipher(object):
         
         return pt
             
-# cipher = SpeckCipher(24567, 128, 128, 'ECB')
+# cipher = SpeckCipher(24, 64, 32, 'ECB')
 # t = cipher.encrypt(65535)
 # print(hex(t))
 
