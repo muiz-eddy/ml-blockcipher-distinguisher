@@ -1,6 +1,6 @@
 # FYP_ML_Distinguisher
 
-Code is in implementation state and is not complete
+Final Implementation of ML BASED DISTINGUISHER and Strict Avalanche Criterion
 
 # For Final Year project as Learning Purposes
 
