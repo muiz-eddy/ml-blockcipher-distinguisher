@@ -1,4 +1,4 @@
-# FYP_ML_Distinguisher
+# ML-Blockcipher-Distinguisher
 
 Final Implementation of ML BASED DISTINGUISHER and Strict Avalanche Criterion
 
